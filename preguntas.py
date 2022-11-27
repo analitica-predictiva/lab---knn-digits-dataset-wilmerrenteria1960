@@ -99,7 +99,7 @@ def pregunta_03():
         knn = KNeighborsClassifier(n_neighbors=k)
 
         # Entrene el clasificador con los datos de entrenamiento
-        knn.fit(X,y)
+        knn.fit(X_train,y_train)
 
         # Calcule la precisión para el conjunto de datos de entrenamiento
         train_accuracy[i] = knn.score(X_train, y_train)
